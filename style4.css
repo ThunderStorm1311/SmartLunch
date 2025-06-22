@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    "Inter",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  line-height: 1;
+  color: #000;
+}
+
+.wallet-container {
+  min-height: 100vh;
+  background: #d3eed3;
+  position: relative;
+  overflow-x: hidden;
+}
+
+
+.header-bar {
+  width: 100%;
+  height: 110px;
+  background: #6ea177;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.main-content {
+  position: relative;
+  padding-top: 135px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+
+.card-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+.white-card {
+  background: #fefefe;
+  border-radius: 25px;
+  padding: 15px;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.yellow-accent {
+  background: #fdff7f;
+  border-radius: 25px;
+  padding: 32px;
+  margin-bottom: 24px;
+  position: relative;
+  min-height: 439px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.credit-card {
+  width: 100%;
+  max-width: 512px;
+  height: 289px;
+  background: #18a0fb;
+  border: 1px solid #3f67e1;
+  border-radius: 10px;
+  padding: 24px;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.visa-logo {
+  color: #fff;
+  font-family:"Goldman",-apple-system,Roboto,Helvetica,sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+
+
+.card-number {
+  color: #fff;
+  font-family:"Inter",apple-system,Roboto,Helvetica,sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+
+.balance-section {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+}
+
+.balance-label {
+  color: #fff;
+  font-family:"Inter",-apple-system,Roboto,Helvetica,sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.balance-amount {
+  color: #fff;
+  font-family:"Inter",-apple-system,Roboto,Helvetica,sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16px;
+}
+
+
+.btn-check-balance {
+  font-size: 32px;
+  font-weight: 400;
+  padding: 14px 32px;
+  min-width: 300px;
+}
+
+.btn-back {
+  font-size: 40px;
+  font-weight: 400;
+  padding: 12px 24px;
+  min-width: 180px;
+}
+
+
+
+.transactions-section {
+  background: #6ea177;
+  width: 100%;
+  padding: 32px 16px;
+  margin-top: 32px;
+}
+
+.transactions-container {
+  max-width: 1392px;
+  margin: 0 auto;
+}
+
+
+.transactions-title {
+  color: #000;
+  font-family:"Inter",-apple-system,Roboto,Helvetica,sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+}
+
+.transaction-description {
+  color: #000;
+  font-family:"Inter",-apple-system,Roboto,Helvetica,sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.transaction-amount {
+  color: #000;
+  font-family:"Inter",-apple-system,Roboto,Helvetica,sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+
+
+
+@media (min-width: 769px) {
+  .button-container {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .btn-check-balance,
+  .btn-back {
+    width: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-content {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .transactions-section {
+    padding: 40px 24px;
+  }
+}
+
+.btn-check-balance{
+    border-radius: 15px;
+}
+
+.btn-back{
+    border-radius: 15px;
+}
